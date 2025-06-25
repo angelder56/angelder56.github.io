@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU PRINCIPAL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #6dbe81;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            position: fixed;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        .sidebar:hover {
+            width: 300px;
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+        .menu a {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            text-decoration: none;
+            color: rgb(252, 252, 252);
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .menu a:hover {
+            transform: scale(1.1);
+            background: #555;
+        }
+        .content {
+            margin-left: 250px;
+            flex: 1;
+            padding: 20px;
+            background: #8dceaf;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <div class="menu">
+            <a href="/CODIGOS/plantel.html">Info. del Plantel</a>
+            <a href="#">Materias</a>
+            <a href="#">Carreras</a>
+            <a href="#">Carrera (Programacion)</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <center><h1>Bienvenido al Menú Principal</h1></center>
+        <center><img src="https://iconape.com/wp-content/png_logo_vector/cecytem-logo.png" width="500" height="500"></img></center>
+     <nav>
+        <li><b>PLANTEL</b></li>
+         <li> <a href="plantel.html"> plantel</a></li>
+          <li><b>Carrera</b></li>
+          <li><a href="programacion.html" >carrera </a></li>
+         <li><b>Materias</b></li>
+         <li> <a href="reaciones quimicas.html"> reaciones quimicas</a></li>
+         <li><b>Materias</b></li>
+         <li> <a href="selectos matematicos.html"> matematicas</a></li>
+         <li><b>Materias</b></li>
+         <li><a href="conciencia historica.html"> concia historica</a></li>
+         <li><b>Materias</b></li>
+         <li><a href="ingles.html">ingles</a></li>
+         <li><b>Materias</b></li>
+         <li><a href="ciencias sociales.html">ciencias sociales</a></li>
+        </div>
+
+
+
+</body>
+</html>

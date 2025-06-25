@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Estético</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+            color: #589b58;
+        }
+
+        header {
+            background-color: #26774a;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 3px solid #64d38f;
+        }
+
+        nav {
+            background-color: #5bb868;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px 0;
+            padding: 60px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            border-top: 3px solid #7bbe44;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="menu.html">Menu principal</a>
+    <header>
+        PROGRAMACION 
+    </header>
+    <main>
+        <center><h1> LA PROGRAMACION EN TU VIDA </h1><center></center>
+    </section>
+    <section id="#PROGRAMACION "></section>
+</ul>
+<br>
+    <h4>Que es la programacion </h4>
+    <br>
+    <p>La programación y su relación con el desarrollo web: cliente y servidor
+        La programación es el arte de traducir ideas en instrucciones comprensibles para una máquina. Es la base de todo desarrollo tecnológico y digital, desde simples calculadoras hasta complejos sistemas de inteligencia artificial. En el contexto del desarrollo web, la programación se convierte en una herramienta clave para construir experiencias digitales dinámicas y funcionales.
+        Dentro del mundo web, existen dos grandes áreas: el lado del cliente (frontend) y el lado del servidor (backend). Ambas son esenciales y se complementan entre sí para lograr que una página o aplicación funcione correctamente.
+        Por un lado, el frontend abarca todo lo que el usuario ve e interactúa en su navegador: diseño, botones, menús, animaciones, formularios. Aquí se utilizan lenguajes como HTML para la estructura, CSS para el estilo visual y JavaScript para dotar de interactividad a la página. Esta área requiere habilidades creativas y una fuerte atención a la experiencia del usuario.
+        Por otro lado, el backend se encarga del funcionamiento interno que no es visible para el usuario: conexión a bases de datos, validación de usuarios, almacenamiento de información, lógica de negocio. Aquí entran en juego lenguajes como PHP, Python, Node.js o Java, así como sistemas de gestión de bases de datos como MySQL o MongoDB. El backend se ejecuta en un servidor, que procesa las solicitudes del cliente y devuelve la información correspondiente.
+        Estudiar programación y materias relacionadas con el desarrollo web no solo abre la puerta a una carrera profesional en constante crecimiento, sino que también permite desarrollar el pensamiento lógico, la creatividad y la capacidad de resolver problemas. Entender cómo se conectan los diferentes componentes de una página —desde lo que el usuario ve hasta cómo viajan los datos detrás del telón— da una visión más profunda del mundo digital en el que vivimos.
+         </p>
+
+        
+        
+    </section>
+    <div style="margin: 40px 0; text-align: center;">
+        <h3>Galería Histórica</h3>
+        <div style="width: 300px; overflow: hidden; margin: 20px auto; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.2);">
+          <div id="sliderImages" style="display: flex; width: 1200px; transition: transform 0.5s ease-in-out;">
+            <img src="" width="300" height="200">
+            <img src="" width="300" height="200">
+            <img src="" width="300" height="200">
+            <img src="" width="300" height="200">
+          </div>
+        </div>
+        <div>
+          <button onclick="moverSlider(-1)" style="padding: 5px 10px; background-color: #5bb868; color: white; border: none; border-radius: 5px;">←</button>
+          <button onclick="moverSlider(1)" style="padding: 5px 10px; background-color: #5bb868; color: white; border: none; border-radius: 5px;">→</button>
+        </div>
+      </div>
+
+      </section>
+  </main>
+
+
+    
+    </section>
+
+    </main>
+
+    <footer>
+        © 2025 Mi Pagina informativa CECyTEM
+    </footer>
+    <script>
+        let posicion = 0;
+        function moverSlider(direccion) {
+          const slider = document.getElementById("sliderImages");
+          posicion = (posicion + direccion + 4) % 4;
+          slider.style.transform = `translateX(${-300 * posicion}px)`;
+        }
+      </script>
+  </body>
+  </html>
+  
+  
+</body>
+</html>
+</body>
+</html>
